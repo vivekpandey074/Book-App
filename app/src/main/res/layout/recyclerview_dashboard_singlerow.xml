@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentlayoutrecyclerviewitem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/ivbook"
+        android:layout_width="154dp"
+        android:layout_height="151dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tvbookname"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="92dp"
+        android:layout_toRightOf="@+id/ivbook"
+        android:padding="10dp"
+        android:text="Book Name"
+
+
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvauthorname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/tvbookname"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@+id/ivbook"
+
+
+        android:padding="10dp"
+        android:text="Author name"
+        android:textColor="#000000"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tvratings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvauthorname"
+
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="92dp"
+        android:layout_toRightOf="@id/ivbook"
+        android:text="Ratings" />
+
+    <TextView
+        android:id="@+id/tvprice"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvauthorname"
+        android:layout_marginLeft="82dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="40dp"
+
+        android:layout_toRightOf="@id/tvratings"
+        android:text="Price" />
+
+
+</RelativeLayout>
